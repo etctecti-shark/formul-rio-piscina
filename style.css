@@ -1,0 +1,265 @@
+/* =========================================
+   ESTILOS DO BODY E DO FORMULÁRIO PRINCIPAL
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    color: #334155;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 99, 204, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    text-align: center;
+    color: #0369a1;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+legend {
+    font-weight: bold;
+    color: #0284c7;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #475569;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=time],
+input[type=number],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    margin: 0;
+    cursor: pointer;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 25px;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* =========================================
+   ESTILOS DO RECIBO / RESUMO
+   ========================================= */
+.resumo-card {
+    margin-top: 40px;
+    background: #ffffff;
+    border: 2px solid #0284c7;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(2, 132, 199, 0.1);
+    overflow: hidden;
+}
+
+.resumo-header {
+    background: #0284c7;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.resumo-body {
+    padding: 25px;
+}
+
+.grid-dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .grid-dados {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.secao-dados {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.secao-dados h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0369a1;
+    font-size: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.secao-dados p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #334155;
+}
+
+.lista-servicos {
+    background: #f0fdfa;
+    border: 1px solid #ccfbf1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.lista-servicos h3 {
+    margin-top: 0;
+    color: #0d9488;
+    font-size: 15px;
+    border-bottom: 2px solid #ccfbf1;
+    padding-bottom: 5px;
+}
+
+.lista-servicos ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+    color: #115e59;
+}
+
+.lista-servicos li {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.observacao-box {
+    background: #fffbeb;
+    border: 1px solid #fef3c7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #92400e;
+    font-size: 14px;
+}
+
+.observacao-box h3 {
+    margin-top: 0;
+    color: #b45309;
+    font-size: 15px;
+}
+
+.tabela-valores {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-valores td {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #475569;
+}
+
+.tabela-valores tr.total-row td {
+    padding-top: 15px;
+    border-top: 2px dashed #cbd5e1;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0284c7;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.erro-msg {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #f87171;
+    margin-bottom: 20px;
+}
